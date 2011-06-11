@@ -132,6 +132,9 @@ static const NSTimeInterval kCachedURLReservationInterval = 60.; // 1 minute
 
 - (NSString *)temporaryDownloadPath;
 - (void)setTemporaryDownloadPath:(NSString *)str;
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error;
+
 @end
 
 
